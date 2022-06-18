@@ -52,6 +52,60 @@
     width:150px;
     
 }
+#to-grid{ 
+    width:auto;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+
+.grid-layout{
+    width:50%;
+    margin:30px auto;
+}
+#grid-container-1{
+    display: grid;
+    grid-template-areas: 
+    'orange orange yellow'
+    'orange orange yellow';
+    grid-gap: 10px;
+    grid-column-gap: 10px;
+}
+#grid-container-2{
+    display: grid;
+    grid-template-areas:  
+    'green blue blue'
+    'green blue blue';
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+}
+#grid-container-1 div{
+    text-align: center;
+    height:200px; 
+    vertical-align: center;
+}
+#grid-container-2 div{
+    text-align: center;
+    vertical-align: center;
+    height:200px;
+}
+.orange{
+    background-color: orange;
+    grid-area: orange;
+}
+.yellow{
+    background: yellow;
+    grid-area: yellow;
+}
+.green{
+    background:green;
+    grid-area: green;
+}
+.blue{
+    background: blue;
+    grid-area: blue;
+}
+
+
 
 @media only screen and (max-width: 375px) {
     
